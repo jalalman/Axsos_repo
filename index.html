@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Calculator</title>
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div id="calculator">
+            <div id="display">0</div>
+            <div class="row">
+                <buttton onclick="press(7)">7</buttton>
+                <buttton onclick="press(8)">8</buttton>
+                <buttton onclick="press(9)">9</buttton>
+                <buttton class="operator" onclick="setOP('/')">&#247</buttton>
+            </div>
+            <div class="row">
+                <buttton onclick="press(4)">4</buttton>
+                <buttton onclick="press(5)">5</buttton>
+                <buttton onclick="press(6)">6</buttton>
+                <buttton class="operator" onclick="setOP('-')">-</buttton>
+            </div>
+            <div class="row">
+                <buttton onclick="press(1)">1</buttton>
+                <buttton onclick="press(2)">2</buttton>
+                <buttton onclick="press(3)">3</buttton>
+                <buttton class="operator" onclick="setOP('*')">x</buttton>
+            </div>
+            <div class="row">
+                <buttton onclick="clr()">C</buttton>
+                <buttton onclick="press(0)">0</buttton>
+                <buttton onclick="press('.')">.</buttton>
+                <buttton class="operator" onclick="setOP('+')">+</buttton>
+            </div>
+            <div class="row">
+                <buttton onclick="calculate()" id="equals">=</buttton>
+
+            </div>
+        </div>
+
+        <script src="script/script.js"></script>
+    </body>
+</html>

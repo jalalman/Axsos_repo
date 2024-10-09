@@ -1,0 +1,83 @@
+/* jalal hemmo
+4.10.2024
+calculator
+ */
+@font-face {
+    font-family: "calculatorFont" ;
+    src: url(fonts/Digital7-rg1mL.ttf);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: whitesmoke;
+    font-family: monospace;
+    font-weight: 500;
+    user-select: none;
+}
+#calculator {
+    width: 320px;
+    background-color:#222222 ;
+    height: 480px;
+    margin: 150px auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px #cccccc ;
+}
+#display , .row {
+    width: 100%;
+}
+#display {
+    font-size: 70px;
+    font-family: 'calculatorFont';
+    transition: all 0.1s ease-in;
+    text-align: right;
+    border: 2px solid black;
+    background-color: #5d5d5d;
+    margin-bottom: 5px;
+    padding: 0 10px;
+    overflow: hidden;
+}
+.row {
+
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 15%;
+}
+.row buttton {
+    width: 20%;
+    height: 90%;
+    background-color:#5d5d5d ;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: all 0.05s linear;
+}
+.row .operator {
+    background-color: #ff8800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+}
+.row .operator:active{
+    background-color: orange;
+}
+.row #equals {
+    width: 99%;
+    border-radius: 25px;
+    background-color: #cccccc;
+    color: #222222;
+}
+
+
+.row buttton:active {
+    background-color: #999999;
+}
+#equals:active {
+    background-color: #eee;
+  }
